@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
 import { InLiveButton } from '../molecules/InLiveButton';
+import { IconsHeader } from '../molecules/IconsHeader';
 import { Stack } from '@mui/material';
 
 export const Header = () => {
@@ -15,6 +16,7 @@ export const Header = () => {
           <img src={logo} alt="" style={{ marginTop: '20px' }} />
         </div>
         <InLiveButton />
+        <IconsHeader />
       </Stack>
     </React.Fragment >
   );
