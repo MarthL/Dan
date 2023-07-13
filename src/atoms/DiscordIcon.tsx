@@ -1,9 +1,14 @@
 import React from 'react';
 
 export const DiscordIcon = () => {
+
+  const style = {
+    marginRight: '10px',
+  };
+
   return (
     <>
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style={style}>
         <g>
           <rect width="32" height="32" fill="none" />
           <path d="M13.635 13.9927C12.8905 13.9927 12.3027 14.6161 12.3027 15.3766C12.3027 16.1371 12.9036 16.7605 13.635 16.7605C14.3795 16.7605 14.9672 16.1371 14.9672 15.3766C14.9803 14.6161 14.3795 13.9927 13.635 13.9927ZM18.4023 13.9927C17.6578 13.9927 17.0701 14.6161 17.0701 15.3766C17.0701 16.1371 17.6709 16.7605 18.4023 16.7605C19.1468 16.7605 19.7346 16.1371 19.7346 15.3766C19.7346 14.6161 19.1468 13.9927 18.4023 13.9927Z" fill="white" />

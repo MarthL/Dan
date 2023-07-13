@@ -6,15 +6,17 @@ import { DiscordIcon } from './../atoms/DiscordIcon';
 import { SteamIcon } from './../atoms/SteamIcon';
 
 export const IconsHeader = () => {
-
+  const marginIcons: string = '10px';
 
   return (
     <React.Fragment>
-      <YouTubeIcon style={{ color: "white" }} fontSize='large' />
-      <InstagramIcon fontSize='large' style={{ color: "white" }} />
-      <DiscordIcon />
-      <TwitterIcon fontSize='large' style={{ color: "white" }} />
-      <SteamIcon />
+      <div style={{ marginRight: '50px' }}>
+        <YouTubeIcon style={{ color: "white", marginRight: marginIcons }} fontSize='large' />
+        <InstagramIcon fontSize='large' style={{ color: "white", marginRight: marginIcons }} />
+        <DiscordIcon />
+        <TwitterIcon fontSize='large' style={{ color: "white", marginRight: marginIcons }} />
+        <SteamIcon />
+      </div>
     </React.Fragment>
   )
 };
