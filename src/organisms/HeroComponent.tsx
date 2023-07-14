@@ -1,17 +1,17 @@
 import React from 'react';
-import { Container, Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
+import { Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
 
 export const HeroComponent = () => {
   return (
     <React.Fragment>
       <Grid container spacing={0} gap={0}>
-        <Grid item xs={10}>
+        <Grid item xs={10} maxHeight='800px'>
           <Card>
             <div style={{ position: 'relative' }}>
               <CardMedia title="hero" src={require("./../assets/hero.png")} component="img" />
               <CardContent sx={{ position: 'absolute', bottom: 0, left: 0, width: '100%' }}>
                 <Typography
-                  variant="body1"
+                  variant="h3"
                   sx={{
                     backgroundColor: 'rgba(0, 0, 0, 0.5)',
                     color: 'white',
@@ -30,7 +30,7 @@ export const HeroComponent = () => {
               <CardMedia title="hero" src={require("./../assets/car2.png")} component="img" height='100%' />
               <CardContent sx={{ position: 'relative', paddingBottom: '0' }}>
                 <Typography
-                  variant="h3"
+                  variant="h4"
                   margin={'revert'}
                   sx={{
                     position: 'absolute',
@@ -50,7 +50,7 @@ export const HeroComponent = () => {
               <CardMedia title="hero" src={require("./../assets/car3.png")} component="img" height='100%' />
               <CardContent sx={{ position: 'relative', paddingBottom: '0' }}>
                 <Typography
-                  variant="h3"
+                  variant="h4"
                   margin={'revert'}
                   sx={{
                     position: 'absolute',
@@ -70,7 +70,7 @@ export const HeroComponent = () => {
               <CardMedia title="hero" src={require("./../assets/car4.png")} component="img" height='100%' />
               <CardContent sx={{ position: 'relative', paddingBottom: '0' }}>
                 <Typography
-                  variant="h3"
+                  variant="h4"
                   margin={'revert'}
                   sx={{
                     position: 'absolute',
