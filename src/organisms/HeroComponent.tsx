@@ -5,10 +5,10 @@ export const HeroComponent = () => {
   return (
     <React.Fragment>
       <Grid container spacing={0} gap={0}>
-        <Grid item xs={10} maxHeight='800px'>
+        <Grid item xs={10}>
           <Card>
             <div style={{ position: 'relative' }}>
-              <CardMedia title="hero" src={require("./../assets/hero.png")} component="img" />
+              <CardMedia title="hero" src={require("./../assets/hero.png")} component="img" sx={{ maxHeight: '800px' }} />
               <CardContent sx={{ position: 'absolute', bottom: 0, left: 0, width: '100%' }}>
                 <Typography
                   variant="h3"
