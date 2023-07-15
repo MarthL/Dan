@@ -30,7 +30,7 @@ export const HeroComponent = () => {
               <CardMedia title="hero" src={require("./../assets/car2.png")} component="img" height='100%' />
               <CardContent sx={{ position: 'relative', paddingBottom: '0' }}>
                 <Typography
-                  variant="h4"
+                  variant="h6"
                   margin={'revert'}
                   sx={{
                     position: 'absolute',
@@ -50,7 +50,7 @@ export const HeroComponent = () => {
               <CardMedia title="hero" src={require("./../assets/car3.png")} component="img" height='100%' />
               <CardContent sx={{ position: 'relative', paddingBottom: '0' }}>
                 <Typography
-                  variant="h4"
+                  variant="h6"
                   margin={'revert'}
                   sx={{
                     position: 'absolute',
@@ -65,16 +65,15 @@ export const HeroComponent = () => {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item bgcolor={'white'} border={'solid 1px'} xs={12}>
+          <Grid item xs={12}>
             <Card sx={{ height: '100%' }}>
               <CardMedia title="hero" src={require("./../assets/car4.png")} component="img" height='100%' />
               <CardContent sx={{ position: 'relative', paddingBottom: '0' }}>
                 <Typography
-                  variant="h4"
-                  margin={'revert'}
+                  variant="h6"
                   sx={{
                     position: 'absolute',
-                    bottom: 0,
+                    bottom: '100px',
                     left: 0,
                     backgroundColor: 'rgba(0, 0, 0, 0.5)',
                     color: 'white',
