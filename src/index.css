@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.form > * {
+  margin: auto;
+}
+
+.form > #formNom {
+  flex: 2;
+  color: white
+}
+
+#formPrenom {
+  flex: 2;
+} 

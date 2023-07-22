@@ -69,3 +69,11 @@ body {
   width: fit-content;
   cursor: pointer;
 }
+
+.form {
+  margin: auto;
+}
+
+.form * {
+  margin: 10px;
+}
