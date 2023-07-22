@@ -18,7 +18,7 @@ export const Header = () => {
         </div>
         <InLiveButton />
         <Box sx={{ margin: 'auto' }} />
-        <IconsHeader />
+        <IconsHeader header />
       </Stack>
     </React.Fragment >
   );
