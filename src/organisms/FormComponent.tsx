@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Box, FormControl, FormLabel, FormHelperText, InputLabel, Input, TextField } from '@mui/material'
+import { Container, Typography, Box, FormControl, TextField, Button } from '@mui/material'
 
 export const FormComponent = () => {
 
@@ -18,7 +18,6 @@ export const FormComponent = () => {
                   paddingLeft: '25px',
                 }
               }}
-
             />
             <TextField
               id="formNom"
@@ -29,9 +28,6 @@ export const FormComponent = () => {
                   paddingLeft: '25px',
                 }
               }}
-            // value={}
-            // onChange={ }
-
             />
             <TextField
               id=""
@@ -42,21 +38,24 @@ export const FormComponent = () => {
                   paddingLeft: '25px',
                 }
               }}
-            // value={ }
-            // onChange={ }
             />
             <TextField
               id=""
               label="Message"
               fullWidth
+              size={'medium'}
+              inputProps={{
+                style: {
+                  minHeight: '50px',
+                }
+              }}
               InputLabelProps={{
                 sx: {
                   paddingLeft: '25px',
                 }
               }}
-            // value={ }
-            // onChange={ }
             />
+            <Button variant='contained' sx={{ marginTop: '15px' }}>Envoyer</Button>
           </FormControl>
         </Container>
       </Box>
