@@ -5,16 +5,17 @@ export const HeroComponent = () => {
   return (
     <div className="container" style={{ height: '88vh' }}>
       <div className="header">
-        <h1>Yozukayma</h1>
+        <Typography variant="h1" color="white" sx={{ cursor: 'default' }}> Yozukayma Twitch </Typography>
+        <Typography variant="h2" color="white" sx={{ cursor: 'default' }}>Je stream sur twitch depuis plusieurs années. </Typography>
       </div>
       <div className="img2">
-        <h2>test 1</h2>
+        <h2>Twitch</h2>
       </div>
       <div className="img3">
-        <h2>test 2</h2>
+        <h2>Youtube</h2>
       </div>
       <div className="img4">
-        <h2>test 3</h2>
+        <h2>Discord</h2>
       </div>
     </div>
 

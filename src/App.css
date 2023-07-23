@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'markoOne';
+  src: local('markoOne'), url('./assets/fonts/MarkoOne-Regular.ttf') format('truetype');
+}
+
+.header > h1 {
+  font-family: markoOne;
+}
+
+.header > h2 { 
+  font-family: markoOne;
+}
+
 body {
   background-color: #252424;
   overflow-y: none;
@@ -33,11 +46,11 @@ body {
 }
 
 .header { grid-area: header; background-image: url('./assets/hero.png'); background-repeat: no-repeat; background-position: center center; background-size: cover;}
-.header > h1 {
+.header > h1, h2 {
   color: white;
   text-align: center;
   position: relative;
-  top: 80%;
+  top: 70%;
 }
 .img2 { grid-area: img2;background-image: url('./assets/car2.png'); background-repeat: no-repeat; background-position: center center; background-size: cover; }
 .img2 > h2 {
@@ -45,7 +58,7 @@ body {
   background-color: white;
   position: relative;
   top: 70%;
-  left: 81%;
+  left: 78%;
   padding: 5px;
   width: fit-content;
   cursor: pointer;
@@ -53,6 +66,7 @@ body {
 .img3 { grid-area: img3; background-image: url('./assets/car3.png'); background-repeat: no-repeat; background-position: center center; background-size: cover; }
 .img3 > h2 {
   color: black;
+  position: relative;
   background-color: white;
   padding: 5px;
   width: fit-content;
@@ -66,6 +80,7 @@ body {
   padding: 5px;
   position: relative;
   top: 60%;
+  left: 75%;
   width: fit-content;
   cursor: pointer;
 }
