@@ -6,7 +6,7 @@ export const FormComponent = () => {
   return (
     <React.Fragment>
       <Container sx={{ backgroundColor: 'white', borderRadius: '20px', marginTop: '25px' }}>
-        <Typography variant="h3" color="black" textAlign={'center'}>Une question ?</Typography>
+        <Typography variant="h3" color="black" textAlign={'center'} margin={3}>Contact</Typography>
         <FormControl className="form" fullWidth margin='normal'>
           <Box component={'div'} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: '20px' }}>
             <TextField

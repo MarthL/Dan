@@ -12,9 +12,9 @@ export const App = () => {
   return (
     <React.Fragment>
       <Header />
-      <HeroComponent></HeroComponent>
+      <HeroComponent />
       <Reviews />
-      <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
+      <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', marginTop: '25px', marginBottom: '25px' }}>
         <BannerComponent />
         <FormComponent />
       </Container>
