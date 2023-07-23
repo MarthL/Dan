@@ -5,8 +5,8 @@ export const HeroComponent = () => {
   return (
     <div className="container" style={{ height: '88vh' }}>
       <div className="header">
-        <Typography variant="h1" color="white"> Yozukayma Twitch </Typography>
-        <Typography variant="h2" color="white">Je stream sur twitch depuis plusieurs années. </Typography>
+        <Typography variant="h1" color="white" sx={{ cursor: 'default' }}> Yozukayma Twitch </Typography>
+        <Typography variant="h2" color="white" sx={{ cursor: 'default' }}>Je stream sur twitch depuis plusieurs années. </Typography>
       </div>
       <div className="img2">
         <h2>Twitch</h2>
