@@ -13,7 +13,7 @@
 
 body {
   background-color: #252424;
-  overflow-y: none;
+  overflow-x: hidden;
 }
 
 @keyframes blinking {
@@ -28,16 +28,37 @@ body {
   }
 }
 
+@keyframes hover {
+  0% {
+  }
+
+  100% {
+    background-color: red;
+    margin: -20px;
+  }
+}
+
+.img2, .img3, .img4 {
+  
+}
+
+.img2.hovered,
+.img3.hovered,
+.img4.hovered {
+  animation: hover 1s both;
+}
+
 .blinking {
   animation: blinking 1s infinite;
 }
 
 /* css de merde  */
-.container {  
+.container {
+  margin: auto;
   display: grid;
   grid-template-columns: 1.6fr 0.4fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
+  gap: 50px 50px;
   grid-auto-flow: row;
   grid-template-areas:
     "header img2"
@@ -50,16 +71,18 @@ body {
   color: white;
   text-align: center;
   position: relative;
-  top: 70%;
+  top: 80%;
 }
-.img2 { grid-area: img2;background-image: url('./assets/car2.png'); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+.img2 { 
+  grid-area: img2;background-image: url('./assets/car2.png'); background-repeat: no-repeat; background-position: center center; background-size: cover; 
+}
 .img2 > h2 {
   color: black;
   background-color: white;
   position: relative;
   top: 70%;
   left: 78%;
-  padding: 5px;
+  padding: 2px;
   width: fit-content;
   cursor: pointer;
 }
