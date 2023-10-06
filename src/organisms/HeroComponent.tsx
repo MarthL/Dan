@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
+import Typewriter from "typewriter-effect";
 
 export const HeroComponent = () => {
   const [isHovered1, setIsHovered1] = useState(false);
@@ -35,7 +36,26 @@ export const HeroComponent = () => {
     <div className="container" style={{ height: '88vh', width: '90vw' }}>
       <div className="header">
         <Typography variant="h1" color="white" sx={{ cursor: 'default', fontSize: '38px', marginBottom: '50px' }}> Yozukayma Twitch </Typography>
-        <Typography variant="h2" color="white" sx={{ cursor: 'default', fontSize: '28px' }}>Je stream sur twitch depuis plusieurs années. </Typography>
+        <Typography variant="h2" color="white" sx={{ cursor: 'default', fontSize: '28px' }}>
+          <Typewriter
+            options={{
+              loop: true
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .start()
+                .pauseFor(1000)
+                .typeString('Je stream sur twitch.')
+                .pauseFor(500)
+                .deleteChars(8)
+                .typeString(' youtube.')
+                .pauseFor(500)
+                .deleteAll('natural')
+                .typeString('Rejoignez ma commu sur Discord.')
+
+            }}
+          />
+        </Typography>
       </div>
       <div
         className={`img2 ${isHovered1 ? 'hovered' : ''}`}
